@@ -5,6 +5,7 @@ services:
       - "97:5000"
     volumes:
       - ./backend:/app
+      - /app/node_modules
     environment:
       MONGO_URL: mongodb://mongo:27017/cmsdb
     depends_on:
